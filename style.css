@@ -1,0 +1,96 @@
+body {
+  background-color: #1c1c1c;
+  color: #f9a825;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3e2723;
+  padding: 20px;
+  font-size: 2em;
+  color: #ff6f00;
+  text-shadow: 2px 2px 8px black;
+}
+
+section {
+  margin: 30px;
+  padding: 20px;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff8f00;
+}
+
+img {
+  max-width: 80%;
+  border: 3px solid #ffa000;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+h2 {
+  color: #ffca28;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Exemplo Flexbox */
+.flexbox-exemplo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4a148c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.abobora {
+  width: 80px;
+  height: 80px;
+  background-color: #ff6f00;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px #000;
+}
+
+/* Exemplo Grid */
+.grid-exemplo {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  background-color: #263238;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.fantasma {
+  background-color: #eceff1;
+  border-radius: 50% 50% 0 0;
+  height: 100px;
+  position: relative;
+}
+
+.fantasma::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: repeating-linear-gradient(
+    90deg,
+    #eceff1 0,
+    #eceff1 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #3e2723;
+  color: #fff3e0;
+}
